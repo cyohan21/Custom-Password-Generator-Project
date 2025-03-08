@@ -13,7 +13,7 @@ def generate_custom_pass(length, use_standard_chars=True, greek_inc=False, jap_i
 
     greek_chars = [chr(random.randint(945, 969)) for _ in range(length//4)] if greek_inc else [] # requires that the user accepts custom characters as input
     jap_chars = [chr(random.randint(12353,12438)) for _ in range(length//4)] if jap_inc else []
-    chinese_chars = [chr(random.randint(0x4e00, 0x9fff)) for _ in range(length//4)] if chinese_inc else [[]]
+    chinese_chars = [chr(random.randint(0x4e00, 0x9fff)) for _ in range(length//4)] if chinese_inc else []
 
     if use_standard_chars:
         all_chars = lower_chars + upper_chars + nums + symbls
